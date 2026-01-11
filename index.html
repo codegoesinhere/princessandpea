@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>IPEA — Former Prime Ministers &amp; Surviving Spouses (Prototype)</title>
+        <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+        <header class="site-header">
+                <div class="wrap">
+                        <h1>IPEA expenditure reporting: Former Prime Ministers and Surviving Spouses</h1>
+                        </p>
+                </div>
+        </header>
+        <main class="wrap">
+                <section class="card" id="fyi">
+                        <h2>Introduction</h2>
+                        <p>Last updated: <span class="yellow">11 January 2026</span></p>
+                        <p>Information in line with IPEA expenditure reporting: <span class="yellow">5 November 2025</span></p>
+                        <p>This information is sourced from the Independent Parliamentary Expenses Authority (IPEA).
+                                They report on and audit parliamentarians’ work resources and staff travel expenses.
+                                They came into existence on 1 July 2017 and have reported from that time to current.</p>
+                        <p>This information is gleaned from their website at <a
+                                        href="https://www.ipea.gov.au/reporting/expenditure"
+                                        target="_blank">ipea.gov.au</a> and their listings on <a
+                                        href="https://data.gov.au/data/organization/ipea"
+                                        target="_blank">data.gov.au</a>. The data here is intended to reflect that data,
+                                but also visualise it with charts for a more consumable way to look at the expenditure.</p>
+                        <p>The data here only reflects two categories from their data:
+                        <ol>
+                                <li>Former Prime Ministers that have left Parliament</li>
+                                <li>Surviving Spouse or De Facto Partner of Former Prime Ministers</li>
+                        </ol>
+                        Treat this as an insight into what IPEA reports on and is more a proof of concept. IPEA has a
+                        LOT of data for all Federal Parliamentarians and that working with that data efficiently isn't
+                        necessarily an easy task. </p>
+
+                </section>
+                <section class="card gc-margin-3" id="cardFormer">
+                        <div class="card__head">
+                                <h2>Former Prime Ministers</h2>
+                                <p class="subtle" id="periodMeta"></p>
+                        </div>
+                        <div class="controls">
+                                <label class="toggle">
+                                        <input id="showZeros" type="checkbox" />
+                                        <span>Show $0 / blank categories</span>
+                                </label>
+                        </div>
+                        <div id="tablesFormer"></div>
+                        <div class="divider"></div>
+                        <div class="charts-slot" id="chartsFormer">
+                                <h3>Charts</h3>
+                                <p class="subtle">These charts update when you change the reporting period.</p>
+                                <div class="chart-grid">
+                                        <div class="chart-card">
+                                                <h4>Total expenditure for the reporting period</h4>
+                                                <div class="chart-wrap">
+                                                        <canvas aria-label="Total expenditure column chart"
+                                                                id="chartFormerTotal" role="img"></canvas>
+                                                </div>
+                                        </div>
+                                        <div class="chart-card">
+                                                <h4>Category breakdown for the reporting period</h4>
+                                                <div class="chart-wrap">
+                                                        <canvas aria-label="Category breakdown stacked chart"
+                                                                id="chartFormerStacked" role="img"></canvas>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="chart-card gc-margin-1">
+                                        <h4>Quarterly total expenditure since reporting to IPEA</h4>
+                                        <div class="chart-wrap">
+                                                <canvas id="chartFormerTrend"></canvas>
+                                        </div>
+                                </div>
+                                <div class="chart-card gc-margin-1">
+                                        <h4>Total expenditure per calendar year</h4>
+                                        <div class="chart-wrap">
+                                                <canvas id="chartFormerYearTotals"></canvas>
+                                        </div>
+                                </div>
+                                <div class="chart-grid gc-margin-1">
+                                        <div class="chart-card">
+                                                <h4>Total expenditure since reporting to IPEA</h4>
+                                                <div class="chart-wrap">
+                                                        <canvas id="chartFormerGrandTotal"></canvas>
+                                                </div>
+                                        </div>
+                                        <div class="chart-card">
+                                                <h4>Total expenditure by category since reporting to IPEA</h4>
+                                                <div class="chart-wrap">
+                                                        <canvas id="chartFormerCategoryTotal"></canvas>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="chart-fallback subtle" hidden="" id="chartFormerFallback">Charts require
+                                        Chart.js. If you’re offline, the tables will still work.</div>
+                        </div>
+                </section>
+                <section class="card gc-margin-3" id="cardSpouses">
+                        <div class="card__head">
+                                <h2>Surviving spouses</h2>
+                                <p class="subtle" id="periodMetaSpouses"></p>
+                        </div>
+                        <div id="tablesSpouses"></div>
+                        <div class="divider"></div>
+                        <div class="charts-slot" id="chartsSpouses">
+                                <h3>Charts</h3>
+                                <p class="subtle">These charts update when you change the reporting period.</p>
+                                <div class="placeholder" hidden="" id="chartSpouseFallback">
+                                        <p><strong>Charts unavailable:</strong> Chart.js didn’t load. Tables will still
+                                                work.</p>
+                                </div>
+                                <div class="chart-grid">
+                                        <div class="chart-card">
+                                                <h4>Total expenditure for the reporting period</h4>
+                                                <div class="chart-wrap">
+                                                        <canvas aria-label="Total expenditure column chart (surviving spouses)"
+                                                                id="chartSpouseTotal" role="img"></canvas>
+                                                </div>
+                                        </div>
+                                        <div class="chart-card">
+                                                <h4>Category breakdown for the reporting period</h4>
+                                                <div class="chart-wrap">
+                                                        <canvas aria-label="Category breakdown stacked chart (surviving spouses)"
+                                                                id="chartSpouseStacked" role="img"></canvas>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="chart-card gc-margin-1">
+                                        <h4>Quarterly total expenditure since reporting to IPEA</h4>
+                                        <div class="chart-wrap">
+                                                <canvas id="chartSpouseTrend"></canvas>
+                                        </div>
+                                </div>
+                                <div class="chart-card gc-margin-1">
+                                        <h4>Total expenditure per calendar year</h4>
+                                        <div class="chart-wrap">
+                                                <canvas id="chartSpouseYearTotals"></canvas>
+                                        </div>
+                                </div>
+                                <div class="chart-grid gc-margin-1">
+                                        <div class="chart-card">
+                                                <h4>Total expenditure since reporting to IPEA</h4>
+                                                <div class="chart-wrap">
+                                                        <canvas id="chartSpouseGrandTotal"></canvas>
+                                                </div>
+                                        </div>
+                                        <div class="chart-card">
+                                                <h4>Total expenditure by category since reporting to IPEA</h4>
+                                                <div class="chart-wrap">
+                                                        <canvas id="chartSpouseCategoryTotal"></canvas>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                </section>
+        </main>
+        <footer class="site-footer">
+                <div class="wrap subtle">
+                        Built for quick iteration. Data loaded locally via <code>data.js</code>.
+                </div>
+        </footer>
+        <div aria-label="Reporting period selector" class="bottom-strip" role="region">
+                <div class="wrap bottom-strip-inner">
+                        <label class="bottom-label" for="periodSelect">Reporting period</label>
+                        <select aria-label="Select reporting period" class="bottom-select" id="periodSelect"></select>
+                        <label class="bottom-label" for="sortSelect">Sort by</label><select aria-label="Sort entries"
+                                class="bottom-select" id="sortSelect"></select>
+                </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+        <script src="data.js"></script>
+        <script src="app.js"></script>
+</body>
+</html>
