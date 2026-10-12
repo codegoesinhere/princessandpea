@@ -6098,6 +6098,196 @@ window.IPEA_DATA = {
         "office_administration": 1088.26,
         "telecommunications": 125.72
       }
+    },      
+    {
+      "reportId": "2026Q02",
+      "periodLabel": "Apr-Jun 2026",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30",
+      "fullName": "Lady Nancy Gorton",
+      "party": null,
+      "surname": "Gorton",
+      "firstName": "Nancy",
+      "roleType": "Surviving Spouse or De Facto Partner of Former Prime Minister",
+      "userId": "SP19-1",
+      "amounts": {
+        "total_expenditure": 95.31,
+        "telecommunications": 95.31
+      }
+    },
+    {
+      "reportId": "2026Q02",
+      "periodLabel": "Apr-Jun 2026",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30",
+      "fullName": "Mrs Tamie Fraser AO",
+      "party": null,
+      "surname": "Fraser",
+      "firstName": "Tamie",
+      "roleType": "Surviving Spouse or De Facto Partner of Former Prime Minister",
+      "userId": "SP22-1",
+      "amounts": {
+      }
+    },
+    {
+      "reportId": "2026Q02",
+      "periodLabel": "Apr-Jun 2026",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30",
+      "fullName": "Ms Blanche d’Apluget",
+      "party": null,
+      "surname": "d’Alpuget",
+      "firstName": "Blanche",
+      "roleType": "Surviving Spouse or De Facto Partner of Former Prime Minister",
+      "userId": "SP23-2",
+      "amounts": {
+      }
+    },
+    {
+      "reportId": "2026Q02",
+      "periodLabel": "Apr-Jun 2026",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30",
+      "fullName": "The Hon Paul Keating",
+      "party": null,
+      "surname": "Keating",
+      "firstName": "Paul",
+      "roleType": "Former Prime Minister",
+      "userId": "PM24",
+      "amounts": {
+        "total_expenditure": 63939.67,
+        "other_car_costs": 3929.48,
+        "office_facilities": 58483.36,
+        "office_administration": 548.90,
+        "telecommunications": 875.49,
+        "employee_travel": 102.44
+      }
+    },
+    {
+      "reportId": "2026Q02",
+      "periodLabel": "Apr-Jun 2026",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30",
+      "fullName": "The Hon John Howard OM AC",
+      "party": null,
+      "surname": "Howard",
+      "firstName": "John",
+      "roleType": "Former Prime Minister",
+      "userId": "PM25",
+      "amounts": {
+        "total_expenditure": 95472.61,
+        "scheduled_commercial_transport": 9212.78,
+        "other_car_costs": 3994.41,
+        "office_facilities": 75602.50,
+        "office_administration": 2568.84,
+        "telecommunications": 731.33,
+        "family_travel": 1092.50,
+        "employee_travel": 2270.25
+      }
+    },
+    {
+      "reportId": "2026Q02",
+      "periodLabel": "Apr-Jun 2026",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30",
+      "fullName": "The Hon Kevin Rudd",
+      "party": null,
+      "surname": "Rudd",
+      "firstName": "Kevin",
+      "roleType": "Former Prime Minister",
+      "userId": "PM26",
+      "amounts": {
+        "total_expenditure": 52952.96,
+        "other_car_costs": 2930.61,
+        "office_facilities": 47282.70,
+        "office_administration": 483.02,
+        "employee_travel": 2256.63
+      }
+    },
+    {
+      "reportId": "2026Q02",
+      "periodLabel": "Apr-Jun 2026",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30",
+      "fullName": "The Hon Julia Gillard AC",
+      "party": null,
+      "surname": "Gillard",
+      "firstName": "Julia",
+      "roleType": "Former Prime Minister",
+      "userId": "PM27",
+      "amounts": {
+        "total_expenditure": 37453.03,
+        "scheduled_commercial_transport": 2277.90,
+        "other_car_costs": 1876.77,
+        "office_facilities": 29619.59,
+        "office_administration": 81.16,
+        "telecommunications": 790.92,
+        "employee_travel": 2806.69
+      }
+    },
+    {
+      "reportId": "2026Q02",
+      "periodLabel": "Apr-Jun 2026",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30",
+      "fullName": "The Hon Malcolm Turnbull AC",
+      "party": null,
+      "surname": "Turnbull",
+      "firstName": "Malcolm",
+      "roleType": "Former Prime Minister",
+      "userId": "PM29",
+      "amounts": {
+        "total_expenditure": 98133.42,
+        "scheduled_commercial_transport": 1251.80,
+        "other_car_costs": 3452.90,
+        "office_facilities": 87936.92,
+        "office_administration": 2941.92,
+        "telecommunications": 672.18,
+        "family_travel": 625.90,
+        "employee_travel": 1251.80
+      }
+    },
+    {
+      "reportId": "2026Q02",
+      "periodLabel": "Apr-Jun 2026",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30",
+      "fullName": "The Hon Tony Abbott",
+      "party": null,
+      "surname": "Abbott",
+      "firstName": "Tony",
+      "roleType": "Former Prime Minister",
+      "userId": "PM28",
+      "amounts": {
+        "total_expenditure": 77452.29,
+        "scheduled_commercial_transport": 765.23,
+        "other_car_costs": 6003.27,
+        "office_facilities": 68169.50,
+        "office_administration": 1124.97,
+        "telecommunications": 624.09,
+        "family_travel": 765.23 
+      }
+    },
+    {
+      "reportId": "2026Q02",
+      "periodLabel": "Apr-Jun 2026",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30",
+      "fullName": "The Hon Scott Morrison",
+      "party": null,
+      "surname": "Morrison",
+      "firstName": "Scott",
+      "roleType": "Former Prime Minister",
+      "userId": "PM30",
+      "amounts": {
+        "total_expenditure": 88542.91,
+        "scheduled_commercial_transport": 935.10,
+        "other_car_costs": 4739.42,
+        "office_facilities": 78988.03,
+        "office_administration": 1253.75,
+        "telecommunications": 507.43,
+        "employee_travel": 2119.18
+      }
     }        
   ]
 };
